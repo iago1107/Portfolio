@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iago Gomes | Backend Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<nav>
+    <div class="logo">Iago Gomes<span>.</span></div>
+    <div class="social-links">
+        <a href="https://www.linkedin.com/in/seu-linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/iago1107" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="mailto:iago1107@hotmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+</nav>
+
+<header class="hero">
+    <div class="hero-content">
+        <span class="badge">Backend Developer & DevOps Student</span>
+        <h1>Transformando problemas complexos em <span class="highlight">código eficiente</span>.</h1>
+        <p>
+            Estudante do 5º período de Sistemas de Informação na FASEH.
+            Especialista em Java 21, Spring Boot 3 e Arquitetura de Containers.
+            Foco em criar APIs robustas e soluções escaláveis.
+        </p>
+        <a href="#projetos" class="btn">Ver Projetos</a>
+    </div>
+</header>
+
+<section id="projetos" class="container">
+    <div class="section-header">
+        <h2>Meus Projetos</h2>
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="backend">Back-end</button>
+            <button class="filter-btn" data-filter="devops">DevOps</button>
+            <button class="filter-btn" data-filter="database">Dados</button>
+        </div>
+    </div>
+
+    <div class="projects-grid">
+
+        <div class="project-card" data-category="backend devops database">
+            <div class="card-icon">
+                <i class="fas fa-bread-slice"></i>
+            </div>
+            <div class="card-content">
+                <span class="tag">Java 21</span> <span class="tag">Spring Boot</span>
+                <h3>API Padaria Cidade</h3>
+                <p>Sistema completo de gestão de pedidos. Inclui validação de estoque transacional, segurança com JWT e conteinerização total.</p>
+                <a href="https://gitlab.com/iago1107/sistemadepedidos" target="_blank" class="card-link">Ver Código <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <div class="project-card" data-category="devops">
+            <div class="card-icon">
+                <i class="fas fa-server"></i>
+            </div>
+            <div class="card-content">
+                <span class="tag">GitLab CI</span> <span class="tag">Podman</span>
+                <h3>Infraestrutura Automatizada</h3>
+                <p>Pipeline de CI/CD configurado para build, teste e deploy automático de containers Java em registry privado.</p>
+                <a href="#" class="card-link">Ver Detalhes <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <div class="project-card" data-category="database">
+            <div class="card-icon">
+                <i class="fas fa-database"></i>
+            </div>
+            <div class="card-content">
+                <span class="tag">MariaDB</span> <span class="tag">JPA</span>
+                <h3>Modelagem Complexa</h3>
+                <p>Estrutura de banco de dados normalizada com herança de tabelas e relacionamentos complexos.</p>
+                <a href="#" class="card-link">Ver Detalhes <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="skills container">
+    <h2>Tech Stack</h2>
+    <div class="skills-grid">
+        <div class="skill-item"><i class="fab fa-java"></i> Java 21</div>
+        <div class="skill-item"><i class="fas fa-leaf"></i> Spring Boot</div>
+        <div class="skill-item"><i class="fab fa-docker"></i> Podman/Docker</div>
+        <div class="skill-item"><i class="fas fa-code-branch"></i> Git/GitLab</div>
+        <div class="skill-item"><i class="fas fa-database"></i> SQL/MariaDB</div>
+        <div class="skill-item"><i class="fas fa-terminal"></i> Linux/WSL</div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Iago Gomes. Desenvolvido com <i class="fas fa-code"></i> e Café.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
