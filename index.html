@@ -21,27 +21,38 @@
 <header class="hero">
     <div class="hero-content">
         <span class="badge">Backend Developer & Infraestrutura</span>
-        <h1>Minha trajetória: do hardware ao <span class="highlight">código eficiente</span>.</h1>
+        <h1>Do suporte físico à <span class="highlight">arquitetura de software</span>.</h1>
 
         <div class="bio-container">
             <p class="bio-text">
-                Minha história com tecnologia começou "colocando a mão na massa" no SENAI, onde passei 400h entendendo como computadores e redes funcionam de verdade, lá no hardware.
+                Minha base técnica é "mão na massa": comecei com formação industrial no SENAI e experiência real em logística (Orguel e Minas Rural), onde aprendi que organização e processos definem o sucesso de qualquer operação.
                 <br><br>
-                Depois, encarei o mundo real na logística (Orguel e Minas Rural). Foi lá que aprendi na marra a ter organização e resolver pepinos críticos rápido. Hoje, no <strong>5º período de Sistemas de Informação na FASEH</strong>, eu juntei essas pontas.
-                <br><br>
-                Não me vejo só como alguém que escreve linhas de código. Eu entendo o todo: da segurança da rede e da infraestrutura (valeu, Cisco!) até o software rodando liso. Ultimamente, tô focado em entregar projetos complexos usando <strong>Java, Spring Boot e DevOps (Podman)</strong>.
-                <br><br>
-                Tô buscando desafios onde eu possa usar essa visão completa — do cabo de rede ao endpoint da API — para criar coisas seguras e que funcionam de verdade.
+                Hoje, no <strong>5º período de Sistemas de Informação na FASEH</strong>, uni essa disciplina operacional com a engenharia de software. Não sou apenas um dev; sou um profissional que entende o ciclo completo, do hardware onde o sistema roda até a entrega do código final.
             </p>
+
+            <div class="bio-highlights">
+                <h3><i class="fas fa-graduation-cap"></i> Destaques da Minha Formação:</h3>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> <strong>SENAI (400h):</strong> Montagem, Manutenção de Micros e Redes Locais.</li>
+                    <li><i class="fas fa-check-circle"></i> <strong>Cisco Academy:</strong> Networking Basics & Computer Hardware Basics.</li>
+                    <li><i class="fas fa-check-circle"></i> <strong>UAITEC:</strong> Segurança Digital em Redes & Manutenção Avançada.</li>
+                    <li><i class="fas fa-check-circle"></i> <strong>Udemy:</strong> Teste de Software Manual (QA).</li>
+                    <li><i class="fas fa-check-circle"></i> <strong>FASEH:</strong> Extensões em Python, Eng. de Software e Inovação.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="location-badge">
+            <i class="fas fa-map-marker-alt"></i> Vespasiano, MG
         </div>
         <br>
-        <a href="#projetos" class="btn">Ver Projetos</a>
+        <a href="#projetos" class="btn">Ver Meus Projetos</a>
     </div>
 </header>
 
 <section id="projetos" class="container">
     <div class="section-header">
-        <h2>Meus Projetos</h2>
+        <h2>Portfólio de Projetos</h2>
         <div class="filters">
             <button class="filter-btn active" data-filter="all">Todos</button>
             <button class="filter-btn" data-filter="backend">Back-end/QA</button>
@@ -52,47 +63,27 @@
 
     <div class="projects-grid">
         <div class="project-card" data-category="backend devops" onclick="openModal('modal-padaria')">
-            <div class="card-icon"><i class="fas fa-bread-slice"></i></div>
+            <div class="card-image-placeholder bakery-bg"><i class="fas fa-bread-slice"></i></div>
             <div class="card-content">
                 <span class="tag">Java 21</span> <span class="tag">Spring Boot</span>
                 <h3>API Padaria Cidade</h3>
-                <p>Sistema completo de gestão de pedidos. Validação transacional de estoque e infraestrutura conteinerizada.</p>
+                <p>Sistema completo de gestão de pedidos com validação de estoque e infraestrutura conteinerizada.</p>
                 <span class="more-link">Ver Detalhes <i class="fas fa-plus"></i></span>
             </div>
         </div>
 
         <div class="project-card" data-category="backend" onclick="openModal('modal-qa')">
-            <div class="card-icon"><i class="fas fa-vial"></i></div>
+            <div class="card-image-placeholder qa-bg"><i class="fas fa-vial"></i></div>
             <div class="card-content">
-                <span class="tag">QA</span> <span class="tag">Testes Manuais</span>
-                <h3>Qualidade de Software (Studio Shodwe)</h3>
+                <span class="tag">QA</span> <span class="tag">Testes</span>
+                <h3>Qualidade de Software</h3>
                 <p>Plano de testes completo para e-commerce, incluindo testes de regressão, usabilidade e segurança.</p>
                 <span class="more-link">Ver Detalhes <i class="fas fa-plus"></i></span>
             </div>
         </div>
 
-        <div class="project-card" data-category="iot" onclick="openModal('modal-tenis')">
-            <div class="card-icon"><i class="fas fa-running"></i></div>
-            <div class="card-content">
-                <span class="tag">IoT</span> <span class="tag">Inovação</span>
-                <h3>Health Strike (Wearable)</h3>
-                <p>Conceito de tênis inteligente com sensores integrados e app "Spy Shoes" para monitoramento de saúde.</p>
-                <span class="more-link">Ver Detalhes <i class="fas fa-plus"></i></span>
-            </div>
-        </div>
-
-        <div class="project-card" data-category="backend" onclick="openModal('modal-medibox')">
-            <div class="card-icon"><i class="fas fa-pills"></i></div>
-            <div class="card-content">
-                <span class="tag">HealthTech</span> <span class="tag">Startup</span>
-                <h3>App MediBox</h3>
-                <p>Solução para gestão de medicamentos e adesão ao tratamento focada em idosos e cuidadores.</p>
-                <span class="more-link">Ver Detalhes <i class="fas fa-plus"></i></span>
-            </div>
-        </div>
-
         <div class="project-card" data-category="iot devops" onclick="openModal('modal-infra')">
-            <div class="card-icon"><i class="fas fa-network-wired"></i></div>
+            <div class="card-image-placeholder security-bg"><i class="fas fa-network-wired"></i></div>
             <div class="card-content">
                 <span class="tag">Redes</span> <span class="tag">Segurança</span>
                 <h3>Infraestrutura Corporativa</h3>
@@ -101,8 +92,28 @@
             </div>
         </div>
 
+        <div class="project-card" data-category="iot" onclick="openModal('modal-tenis')">
+            <div class="card-image-placeholder iot-bg"><i class="fas fa-running"></i></div>
+            <div class="card-content">
+                <span class="tag">IoT</span> <span class="tag">Inovação</span>
+                <h3>Health Strike (Wearable)</h3>
+                <p>Conceito de tênis inteligente com sensores integrados e app para monitoramento de saúde.</p>
+                <span class="more-link">Ver Detalhes <i class="fas fa-plus"></i></span>
+            </div>
+        </div>
+
+        <div class="project-card" data-category="devops">
+            <div class="card-image-placeholder devops-bg"><i class="fas fa-sync-alt"></i></div>
+            <div class="card-content">
+                <span class="tag">GitLab CI</span> <span class="tag">Podman</span>
+                <h3>Pipeline DevOps</h3>
+                <p>Automação de build e deploy. Pipeline para testar código Java e publicar imagens automaticamente.</p>
+                <a href="#" class="card-link">Ver Detalhes <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+
         <div class="project-card" data-category="iot" onclick="openModal('modal-automacao')">
-            <div class="card-icon"><i class="fas fa-home"></i></div>
+            <div class="card-image-placeholder iot-bg"><i class="fas fa-home"></i></div>
             <div class="card-content">
                 <span class="tag">Alexa</span> <span class="tag">IoT</span>
                 <h3>Automação Residencial</h3>
@@ -113,118 +124,145 @@
     </div>
 </section>
 
+<section class="certifications container">
+    <h2>🎓 Formação & Certificações</h2>
+    <div class="cert-grid">
+
+        <div class="cert-card highlight-card faseh-card">
+            <div class="cert-icon"><i class="fas fa-university"></i></div>
+            <h3>Sistemas de Informação</h3>
+            <p class="cert-issuer">Faculdade FASEH (5º Período)</p>
+
+            <div class="cert-details">
+                <p class="module-title">Módulos Chave Concluídos:</p>
+                <ul class="module-list">
+                    <li><i class="fas fa-check"></i> Eng. de Software & Métodos Ágeis</li>
+                    <li><i class="fas fa-check"></i> Sistemas Computacionais e Segurança</li>
+                    <li><i class="fas fa-check"></i> Ambientes Computacionais e Conectividade</li>
+                    <li><i class="fas fa-check"></i> Gestão e Qualidade de Software</li>
+                    <li><i class="fas fa-check"></i> Inteligência Artificial</li>
+                    <li><i class="fas fa-check"></i> Inovação e Competitividade</li>
+                </ul>
+                <p class="cert-current"><small><strong>Foco Atual:</strong> Programação de Soluções e Modelagem de Software.</small></p>
+            </div>
+        </div>
+
+        <div class="cert-card">
+            <div class="cert-icon"><i class="fas fa-microchip"></i></div>
+            <h3>Manutenção de Micros e Redes</h3>
+            <p class="cert-issuer">SENAI / FIEMG (400h)</p>
+            <p class="cert-desc">Qualificação industrial completa em hardware, montagem e infraestrutura de redes locais.</p>
+        </div>
+
+        <div class="cert-card">
+            <div class="cert-icon"><i class="fas fa-user-shield"></i></div>
+            <h3>Segurança Digital e Redes</h3>
+            <p class="cert-issuer">UAITEC (170h Total)</p>
+            <p class="cert-desc">Cursos avançados em Segurança Digital, Redes e Manutenção de Notebooks.</p>
+        </div>
+
+        <div class="cert-card">
+            <div class="cert-icon"><i class="fab fa-cuttlefish"></i></div>
+            <h3>Cisco Certified</h3>
+            <p class="cert-issuer">Cisco Networking Academy</p>
+            <p class="cert-desc">Networking Basics & Computer Hardware Basics. Domínio de TCP/IP e topologias.</p>
+        </div>
+
+        <div class="cert-card">
+            <div class="cert-icon"><i class="fas fa-vial"></i></div>
+            <h3>Teste de Software Manual</h3>
+            <p class="cert-issuer">Udemy (Qualiters Club)</p>
+            <p class="cert-desc">Planejamento de casos de teste e garantia da qualidade de software.</p>
+        </div>
+
+        <div class="cert-card">
+            <div class="cert-icon"><i class="fab fa-python"></i></div>
+            <h3>Análise de Dados com Python</h3>
+            <p class="cert-issuer">Extensão Universitária (62h)</p>
+            <p class="cert-desc">Programação prática para manipulação e análise de dados.</p>
+        </div>
+    </div>
+</section>
+
+<section class="skills-detailed container">
+    <h2>🧰 Arsenal Tecnológico & Competências</h2>
+    <p class="section-desc">Ferramentas e tecnologias que utilizo no dia a dia.</p>
+
+    <div class="tech-grid">
+        <div class="tech-category">
+            <h3><i class="fas fa-code"></i> Desenvolvimento</h3>
+            <ul>
+                <li><strong>Java (Versions 17/21 LTS)</strong></li>
+                <li><strong>Spring Boot 3</strong></li>
+                <li>Spring Data JPA / Hibernate</li>
+                <li>Spring Security (JWT/BCrypt)</li>
+                <li>API RESTful Architecture</li>
+                <li>Python (Análise de Dados)</li>
+                <li>Lógica de Programação</li>
+            </ul>
+        </div>
+
+        <div class="tech-category">
+            <h3><i class="fas fa-server"></i> Infra & Dados</h3>
+            <ul>
+                <li><strong>MariaDB / MySQL</strong></li>
+                <li><strong>Podman & Podman Compose</strong></li>
+                <li>Docker</li>
+                <li>WSL 2 (Linux Subsystem)</li>
+                <li>GitLab CI/CD (Pipelines)</li>
+                <li>Git / GitHub</li>
+            </ul>
+        </div>
+
+        <div class="tech-category">
+            <h3><i class="fas fa-network-wired"></i> Redes & Hardware</h3>
+            <ul>
+                <li><strong>TCP/IP & Roteamento</strong></li>
+                <li>Montagem e Manutenção de Micros</li>
+                <li>Segurança Digital em Redes</li>
+                <li>Topologias de Rede</li>
+                <li>Configuração de Roteadores</li>
+            </ul>
+        </div>
+
+        <div class="tech-category">
+            <h3><i class="fas fa-tools"></i> Ferramentas</h3>
+            <ul>
+                <li><strong>IntelliJ IDEA</strong></li>
+                <li>Swagger / OpenAPI 3</li>
+                <li>Postman</li>
+                <li>Maven</li>
+                <li>Excel Avançado (Dashboards)</li>
+                <li>Microsoft Office 365</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Iago Gomes. Desenvolvido com <i class="fas fa-code"></i>.</p>
+    <div class="footer-links">
+        <a href="https://www.linkedin.com/in/iagogomes-si/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/iago1107" target="_blank">GitHub</a>
+        <a href="mailto:iago1107@hotmail.com">Email</a>
+    </div>
+</footer>
+
 <div id="modal-padaria" class="modal">
     <div class="modal-content">
         <span class="close-btn" onclick="closeModal('modal-padaria')">&times;</span>
         <h2>🍞 API Padaria Cidade</h2>
-        <p class="modal-subtitle">Solução Back-end completa com Java e DevOps</p>
         <div class="modal-body">
             <h3>O Desafio</h3>
-            <p>Uma padaria tradicional sofria com lentidão no atendimento e falhas de comunicação entre o balcão (térreo) e a produção (4º andar). O controle de estoque era manual, gerando vendas de produtos indisponíveis.</p>
-
-            <h3>A Solução Técnica</h3>
+            <p>Padaria tradicional com lentidão no atendimento e falhas de comunicação entre vendas e produção. Controle de estoque manual.</p>
+            <h3>Solução Técnica</h3>
             <ul>
-                <li><strong>API RESTful:</strong> Desenvolvida em Java 21 com Spring Boot 3.</li>
-                <li><strong>Banco de Dados:</strong> MariaDB com modelagem relacional complexa (JPA/Hibernate).</li>
-                <li><strong>Regra de Negócio:</strong> Sistema de validação transacional que impede vendas sem estoque em tempo real.</li>
-                <li><strong>DevOps:</strong> Infraestrutura 100% conteinerizada com <strong>Podman Compose</strong>.</li>
+                <li>API Java 21 com Spring Boot 3.</li>
+                <li>Validação de estoque transacional.</li>
+                <li>Segurança com Spring Security.</li>
+                <li>Infraestrutura conteinerizada com Podman.</li>
             </ul>
-            <a href="https://gitlab.com/iago1107/sistemadepedidos" target="_blank" class="btn-modal">Ver Código no GitLab</a>
-        </div>
-    </div>
-</div>
-
-<div id="modal-qa" class="modal">
-    <div class="modal-content">
-        <span class="close-btn" onclick="closeModal('modal-qa')">&times;</span>
-        <h2>🧪 Qualidade de Software (Studio Shodwe)</h2>
-        <p class="modal-subtitle">Plano de Testes e Validação de E-commerce</p>
-        <div class="modal-body">
-            <h3>Escopo do Projeto</h3>
-            <p>Validação completa do frontend do site "Apoio Entrega". O objetivo foi identificar falhas críticas que impactavam a experiência do usuário e a conversão de vendas.</p>
-
-            <h3>Metodologia Aplicada</h3>
-            <ul>
-                <li><strong>Tipos de Teste:</strong> Funcional, Regressão, Usabilidade, Interface e Segurança.</li>
-                <li><strong>Bugs Encontrados:</strong> Falha na validação de e-mail no cadastro, quebra de layout em mobile e erro na busca de CEP.</li>
-                <li><strong>Ferramentas:</strong> Jira (simulado para gestão de bugs) e Google Sheets para matriz de testes.</li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-<div id="modal-tenis" class="modal">
-    <div class="modal-content">
-        <span class="close-btn" onclick="closeModal('modal-tenis')">&times;</span>
-        <h2>👟 Health Strike & Spy Shoes</h2>
-        <p class="modal-subtitle">Inovação em Wearable Technology e IoT</p>
-        <div class="modal-body">
-            <h3>O Produto</h3>
-            <p>Desenvolvimento conceitual de um tênis inteligente ("Health Strike") integrado a um aplicativo móvel ("Spy Shoes") para monitoramento avançado de saúde.</p>
-
-            <h3>Destaques Técnicos</h3>
-            <ul>
-                <li><strong>Hardware:</strong> Sensores de pressão e precisão integrados na sola, com conectividade Bluetooth Low Energy.</li>
-                <li><strong>Software:</strong> App com Inteligência Artificial para criar planos de nutrição e treino baseados nos dados coletados pelo tênis.</li>
-                <li><strong>Diferencial:</strong> Amortecimento inteligente adaptável ao terreno e gamificação (corrida virtual).</li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-<div id="modal-medibox" class="modal">
-    <div class="modal-content">
-        <span class="close-btn" onclick="closeModal('modal-medibox')">&times;</span>
-        <h2>💊 App MediBox</h2>
-        <p class="modal-subtitle">Solução HealthTech para Adesão ao Tratamento</p>
-        <div class="modal-body">
-            <h3>O Problema</h3>
-            <p>Pesquisas indicaram que cerca de 77% dos pacientes falham em seguir tratamentos medicamentosos corretamente, gerando riscos à saúde.</p>
-
-            <h3>A Solução</h3>
-            <p>Aplicativo focado na gestão de medicamentos com interface simplificada para idosos.</p>
-            <ul>
-                <li><strong>Funcionalidades:</strong> Lembretes inteligentes, histórico de dosagem e conexão direta com cuidadores/familiares.</li>
-                <li><strong>Modelo de Negócio:</strong> Parcerias B2B com farmácias e clínicas para distribuição do serviço.</li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-<div id="modal-infra" class="modal">
-    <div class="modal-content">
-        <span class="close-btn" onclick="closeModal('modal-infra')">&times;</span>
-        <h2>🛡️ Infraestrutura & Segurança</h2>
-        <p class="modal-subtitle">Implementação de Solução Corporativa Robusta</p>
-        <div class="modal-body">
-            <h3>Escopo</h3>
-            <p>Projeto de reestruturação de rede para ambiente corporativo, focado em segurança da informação e alta disponibilidade.</p>
-
-            <h3>Implementação</h3>
-            <ul>
-                <li><strong>Hardware:</strong> Configuração de Switches Gerenciáveis (3COM/TP-Link) e segmentação de rede (VLANs).</li>
-                <li><strong>Segurança:</strong> Análise de vulnerabilidades, implementação de Firewall e políticas de acesso.</li>
-                <li><strong>Software:</strong> Integração de ERP (Bling) e ferramentas de colaboração seguras.</li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-<div id="modal-automacao" class="modal">
-    <div class="modal-content">
-        <span class="close-btn" onclick="closeModal('modal-automacao')">&times;</span>
-        <h2>🏠 Automação Residencial IoT</h2>
-        <p class="modal-subtitle">Integração de Dispositivos Inteligentes</p>
-        <div class="modal-body">
-            <h3>O Projeto</h3>
-            <p>Desenvolvimento de um ecossistema de casa inteligente utilizando protocolo ZigBee e Wi-Fi.</p>
-
-            <h3>Tecnologias</h3>
-            <ul>
-                <li><strong>Hub Central:</strong> Amazon Alexa / Echo Dot.</li>
-                <li><strong>Dispositivos:</strong> Sensores de presença, fechaduras eletrônicas, iluminação inteligente e climatização.</li>
-                <li><strong>Lógica:</strong> Criação de rotinas condicionais (ex: "Se sensor ativar E for noite ENTÃO ligar luzes").</li>
-            </ul>
+            <a href="https://gitlab.com/iago1107/sistemadepedidos" target="_blank" class="btn-modal">Ver Código</a>
         </div>
     </div>
 </div>
