@@ -12,7 +12,7 @@
 <nav>
     <div class="logo">Iago Gomes<span>.</span></div>
     <div class="social-links">
-        <a href="https://www.linkedin.com/in/iagogomes-si" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/iagogomes-si/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
         <a href="https://github.com/iago1107" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
         <a href="mailto:iago1107@hotmail.com" title="Email"><i class="fas fa-envelope"></i></a>
     </div>
@@ -20,17 +20,20 @@
 
 <header class="hero">
     <div class="hero-content">
-        <span class="badge">Backend Developer & DevOps Student</span>
-        <h1>Transformando problemas complexos em <span class="highlight">código eficiente</span>.</h1>
-        <p class="bio-text">
-            Minha trajetória profissional começou na logística e no atendimento, onde desenvolvi uma visão aguçada para processos, organização e resolução ágil de problemas. Percebi que a tecnologia era a chave para otimizar esses processos e decidi fazer minha transição de carreira.
-            <br><br>
-            Atualmente no <strong>5º período de Sistemas de Informação na FASEH</strong>, encontrei no desenvolvimento de software minha verdadeira vocação. Não sou apenas um estudante; sou um desenvolvedor em formação focado na prática.
-            <br><br>
-            Recentemente, liderei o desenvolvimento de uma API REST completa para o varejo (Caso 'Padaria Cidade'), onde fui do levantamento de requisitos com o cliente até a entrega de uma infraestrutura conteinerizada. Tenho me especializado no ecossistema <strong>Java (Spring Boot)</strong> e em práticas modernas de <strong>DevOps (Podman, CI/CD)</strong>.
-            <br><br>
-            Busco oportunidades onde eu possa unir minha disciplina operacional com minhas habilidades técnicas para criar soluções de software robustas e eficientes.
-        </p>
+        <span class="badge">Backend Developer & Infraestrutura</span>
+        <h1>Unindo código eficiente com <span class="highlight">infraestrutura robusta</span>.</h1>
+
+        <div class="bio-container">
+            <p class="bio-text">
+                Minha base técnica é sólida: comecei com <strong>400h de formação industrial em Hardware e Redes no SENAI</strong>, o que me deu um entendimento profundo de como computadores funcionam "por baixo do capô".
+                <br><br>
+                Na minha trajetória profissional em logística (Orguel e Minas Rural), afiei minha capacidade de organização e resolução de problemas críticos. Agora, no <strong>5º período de Sistemas de Informação na FASEH</strong>, uni essas pontas.
+                <br><br>
+                Não sou apenas um dev que escreve código; sou um profissional que entende de <strong>Segurança Digital, Redes (Cisco) e Infraestrutura</strong>. Recentemente, entreguei projetos complexos usando <strong>Java, Spring Boot e DevOps (Podman)</strong>, aplicando na prática a teoria de Engenharia de Software.
+                <br><br>
+                Busco desafios onde eu possa aplicar essa visão completa — do hardware ao software — para criar soluções seguras e performáticas.
+            </p>
+        </div>
 
         <div class="location-badge">
             <i class="fas fa-map-marker-alt"></i> Vespasiano, MG
@@ -47,84 +50,125 @@
         <div class="filters">
             <button class="filter-btn active" data-filter="all">Todos</button>
             <button class="filter-btn" data-filter="backend">Back-end</button>
+            <button class="filter-btn" data-filter="iot">IoT & Redes</button>
             <button class="filter-btn" data-filter="devops">DevOps</button>
-            <button class="filter-btn" data-filter="database">Dados</button>
         </div>
     </div>
 
     <div class="projects-grid">
-
         <div class="project-card" data-category="backend devops database">
-            <div class="card-icon">
-                <i class="fas fa-bread-slice"></i>
-            </div>
+            <div class="card-icon"><i class="fas fa-bread-slice"></i></div>
             <div class="card-content">
-                <span class="tag">Java 21</span> <span class="tag">Spring Boot</span>
+                <span class="tag">Java 21</span> <span class="tag">Spring Boot 3</span> <span class="tag">MariaDB</span>
                 <h3>API Padaria Cidade</h3>
-                <p>Sistema completo de gestão de pedidos. Inclui validação de estoque transacional, segurança com BCrypt e conteinerização total com Podman.</p>
-                <a href="https://gitlab.com/iago1107/sistemadepedidos" target="_blank" class="card-link">Ver Código <i class="fas fa-arrow-right"></i></a>
+                <p>Sistema completo de gestão de pedidos. Inclui validação de estoque transacional, segurança JWT/BCrypt e infraestrutura 100% conteinerizada com Podman.</p>
+                <div class="card-links">
+                    <a href="https://gitlab.com/iago1107/sistemadepedidos" target="_blank" class="card-link"><i class="fab fa-gitlab"></i> Ver Código</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card" data-category="iot">
+            <div class="card-icon"><i class="fas fa-wifi"></i></div>
+            <div class="card-content">
+                <span class="tag">IoT</span> <span class="tag">Redes</span> <span class="tag">Segurança</span>
+                <h3>Automação Residencial</h3>
+                <p>Projeto de casa inteligente integrando dispositivos IoT, assistentes virtuais (Alexa) e protocolos de segurança de rede. Foco em conforto e eficiência energética.</p>
+                <a href="#" class="card-link">Ver Documentação <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
 
         <div class="project-card" data-category="devops">
-            <div class="card-icon">
-                <i class="fas fa-sync-alt"></i>
-            </div>
+            <div class="card-icon"><i class="fas fa-server"></i></div>
             <div class="card-content">
                 <span class="tag">GitLab CI</span> <span class="tag">Podman</span>
-                <h3>Infraestrutura Automatizada</h3>
-                <p>Pipeline de CI/CD configurado para build, teste e deploy automático de containers Java em registry privado.</p>
+                <h3>Pipeline DevOps</h3>
+                <p>Automação completa de build e deploy. Pipeline configurado para testar código Java e publicar imagens de container automaticamente em registry privado.</p>
                 <a href="#" class="card-link">Ver Detalhes <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
+    </div>
+</section>
 
-        <div class="project-card" data-category="database">
-            <div class="card-icon">
-                <i class="fas fa-database"></i>
-            </div>
-            <div class="card-content">
-                <span class="tag">MariaDB</span> <span class="tag">JPA</span>
-                <h3>Modelagem Relacional</h3>
-                <p>Estrutura de banco de dados normalizada com herança de tabelas e relacionamentos complexos para gestão de varejo.</p>
-                <a href="#" class="card-link">Ver Detalhes <i class="fas fa-arrow-right"></i></a>
-            </div>
+<section class="certifications container">
+    <h2>🎓 Formação & Certificações</h2>
+    <div class="cert-grid">
+
+        <div class="cert-card highlight-card">
+            <div class="cert-icon"><i class="fas fa-university"></i></div>
+            <h3>Sistemas de Informação</h3>
+            <p class="cert-issuer">Faculdade FASEH (5º Período)</p>
+            <p class="cert-desc">Formação superior com ênfase em Engenharia de Software, Segurança e Inovação.</p>
+        </div>
+
+        <div class="cert-card">
+            <div class="cert-icon"><i class="fas fa-microchip"></i></div>
+            <h3>Manutenção de Micros e Redes</h3>
+            <p class="cert-issuer">SENAI / FIEMG (400h)</p>
+            <p class="cert-desc">Qualificação industrial completa em hardware, montagem e infraestrutura de redes locais.</p>
+        </div>
+
+        <div class="cert-card">
+            <div class="cert-icon"><i class="fas fa-user-shield"></i></div>
+            <h3>Segurança Digital e Redes</h3>
+            <p class="cert-issuer">UAITEC (170h Total)</p>
+            <p class="cert-desc">Cursos avançados em Segurança Digital, Redes e Manutenção de Notebooks.</p>
+        </div>
+
+        <div class="cert-card">
+            <div class="cert-icon"><i class="fab fa-cuttlefish"></i></div>
+            <h3>Cisco Certified</h3>
+            <p class="cert-issuer">Cisco Networking Academy</p>
+            <p class="cert-desc">Networking Basics & Computer Hardware Basics. Domínio de TCP/IP e topologias.</p>
+        </div>
+
+        <div class="cert-card">
+            <div class="cert-icon"><i class="fab fa-python"></i></div>
+            <h3>Análise de Dados com Python</h3>
+            <p class="cert-issuer">Extensão Universitária (62h)</p>
+            <p class="cert-desc">Programação prática para manipulação e análise de dados.</p>
+        </div>
+
+        <div class="cert-card">
+            <div class="cert-icon"><i class="fas fa-vial"></i></div>
+            <h3>Teste de Software Manual</h3>
+            <p class="cert-issuer">Udemy (Qualiters Club)</p>
+            <p class="cert-desc">Planejamento de casos de teste e garantia da qualidade de software.</p>
+        </div>
+
+        <div class="cert-card">
+            <div class="cert-icon"><i class="fas fa-file-excel"></i></div>
+            <h3>Excel & Word Avançado</h3>
+            <p class="cert-issuer">LinkedIn Learning</p>
+            <p class="cert-desc">Domínio de planilhas, dados e documentação técnica.</p>
         </div>
 
     </div>
 </section>
 
 <section class="skills container">
-    <h2>🛠️ Competências Técnicas</h2>
+    <h2>🛠️ Tech Stack</h2>
     <div class="skills-grid">
         <div class="skill-item"><i class="fab fa-java"></i> Java 21 (LTS)</div>
         <div class="skill-item"><i class="fas fa-leaf"></i> Spring Boot 3</div>
-        <div class="skill-item"><i class="fas fa-database"></i> Spring Data JPA</div>
-        <div class="skill-item"><i class="fas fa-shield-alt"></i> Spring Security (JWT/BCrypt)</div>
-        <div class="skill-item"><i class="fas fa-server"></i> MariaDB / MySQL</div>
+        <div class="skill-item"><i class="fas fa-database"></i> JPA / Hibernate</div>
+        <div class="skill-item"><i class="fas fa-shield-alt"></i> Spring Security</div>
+        <div class="skill-item"><i class="fas fa-server"></i> MariaDB / SQL</div>
         <div class="skill-item"><i class="fab fa-docker"></i> Podman / Docker</div>
-        <div class="skill-item"><i class="fas fa-cubes"></i> Podman Compose</div>
-        <div class="skill-item"><i class="fas fa-terminal"></i> WSL 2 (Linux)</div>
-        <div class="skill-item"><i class="fab fa-gitlab"></i> GitLab CI/CD</div>
+        <div class="skill-item"><i class="fas fa-network-wired"></i> Redes e Infra</div>
+        <div class="skill-item"><i class="fas fa-terminal"></i> Linux / WSL 2</div>
+        <div class="skill-item"><i class="fab fa-gitlab"></i> CI/CD</div>
         <div class="skill-item"><i class="fas fa-code-branch"></i> Git</div>
-        <div class="skill-item"><i class="fas fa-book"></i> Swagger/OpenAPI</div>
-        <div class="skill-item"><i class="fas fa-network-wired"></i> Redes (Cisco Academy)</div>
-    </div>
-</section>
-
-<section class="skills container">
-    <h2>🤝 Competências Comportamentais</h2>
-    <div class="skills-grid">
-        <div class="skill-item"><i class="fas fa-puzzle-piece"></i> Resolução de Problemas</div>
-        <div class="skill-item"><i class="fas fa-comments"></i> Comunicação & Atendimento</div>
-        <div class="skill-item"><i class="fas fa-users"></i> Trabalho em Equipe</div>
-        <div class="skill-item"><i class="fas fa-tasks"></i> Organização & Processos</div>
-        <div class="skill-item"><i class="fas fa-check-circle"></i> Gestão de Qualidade</div>
     </div>
 </section>
 
 <footer>
-    <p>&copy; 2025 Iago Gomes. Desenvolvido com <i class="fas fa-code"></i> e Café.</p>
-    <p style="font-size: 0.9rem; color: #666; margin-top: 10px;">iago1107@hotmail.com</p>
+    <p>&copy; 2025 Iago Gomes. Desenvolvido com <i class="fas fa-code"></i>.</p>
+    <div class="footer-links">
+        <a href="https://www.linkedin.com/in/iagogomes-si/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/iago1107" target="_blank">GitHub</a>
+        <a href="mailto:iago1107@hotmail.com">Email</a>
+    </div>
 </footer>
 
 <script src="script.js"></script>
