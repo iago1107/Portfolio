@@ -200,19 +200,43 @@
 
 <div id="modal-padaria" class="modal">
     <div class="modal-content">
-        <span class="close-btn" onclick="closeModal('modal-padaria')">&times;</span>
+        <span class="close-btn" onclick="function closeModal(modalPadaria) {
+        
+        }
+        closeModal('modal-padaria')">&times;</span>
         <h2>🍞 API Padaria Cidade</h2>
+        <p class="modal-subtitle">Sistema de Gestão e Atendimento Digital</p>
+
         <div class="modal-body">
             <h3>O Desafio</h3>
-            <p>Padaria tradicional com lentidão no atendimento e falhas de comunicação entre vendas (térreo) e produção (4º andar).</p>
-            <h3>Solução Técnica</h3>
+            <p>
+                O projeto nasceu da necessidade de modernizar uma padaria tradicional que enfrentava gargalos críticos: pedidos manuais em papel, filas causadas por indecisão de clientes e, principalmente, uma falha de comunicação entre o atendimento (térreo) e a produção (4º andar).
+            </p>
+
+            <h3>A Solução: Digitalizando o Sabor</h3>
+            <p>
+                Desenvolvi a "espinha dorsal" tecnológica do estabelecimento: uma API REST robusta que centraliza pedidos, cardápio e estoque.
+            </p>
+
+            <div class="modal-image-container">
+                <img src="modelo_PadariaAPi.png" alt="Slide da Metodologia do Aplicativo" class="modal-diagram">
+                <p class="image-caption">Figura 1: Modelagem Relacional do Aplicativo</p>
+            </div>
             <ul>
-                <li><strong>Back-end:</strong> Java 21 + Spring Boot 3.</li>
-                <li><strong>Regra de Negócio:</strong> Validação transacional de estoque ("Sem estoque = Sem venda").</li>
-                <li><strong>Segurança:</strong> Spring Security com BCrypt.</li>
-                <li><strong>Infra:</strong> Ambiente 100% conteinerizado com Podman Compose.</li>
+                <li><strong>Back-end:</strong> Java 21 com Spring Boot 3.</li>
+                <li><strong>Regra de Negócio:</strong> Validação de estoque em tempo real (impede venda de itens esgotados).</li>
+                <li><strong>Banco de Dados:</strong> MariaDB com modelagem relacional (JPA/Hibernate) conforme o diagrama acima.</li>
+                <li><strong>DevOps:</strong> Ambiente 100% conteinerizado com Podman e orquestrado com Docker Compose.</li>
             </ul>
-            <a href="https://gitlab.com/iago1107/sistemadepedidos" target="_blank" class="btn-modal">Ver Código no GitLab</a>
+
+            <div class="modal-actions">
+                <a href="https://gitlab.com/iago1107/sistemadepedidos" target="_blank" class="btn-modal">
+                    <i class="fab fa-gitlab"></i> Ver Código
+                </a>
+                <a href="Slide_Apipadaria.pdf" target="_blank" class="btn-modal secondary">
+                    <i class="fas fa-file-pdf"></i> Ler Artigo do Projeto
+                </a>
+            </div>
         </div>
     </div>
 </div>
@@ -240,13 +264,45 @@
         <span class="close-btn" onclick="closeModal('modal-medibox')">&times;</span>
         <h2>💊 App MediBox</h2>
         <p class="modal-subtitle">HealthTech Startup Pitch</p>
+
         <div class="modal-body">
+            <div class="modal-image-container">
+                <img src="AppMedibox.png" alt="Interface do App MediBox para idosos" class="modal-diagram">
+                <p class="image-caption">Figura 1: Conceito da interface simplificada do aplicativo.</p>
+            </div>
+
             <h3>O Problema</h3>
-            <p>Pesquisas mostram que 31 de 40 pessoas não tomam remédios regularmente, e familiares têm dificuldade em acompanhar o tratamento de idosos.</p>
-            <h3>A Solução</h3>
-            <p>Aplicativo focado na gestão de medicamentos com interface simplificada, lembretes inteligentes e conexão direta com cuidadores.</p>
+            <p>Pesquisas mostram que uma grande parcela de pacientes (especialmente idosos) não toma remédios regularmente, e familiares enfrentam dificuldades em acompanhar o tratamento à distância.</p>
+
+            <h3>A Solução (App)</h3>
+            <ul>
+                <li>Gestão de medicamentos com ‘interface’ extremamente simplificada (letras grandes, alto contraste).</li>
+                <li>Lembretes inteligentes sonoros e visuais.</li>
+                <li>Conexão direta com cuidadores: se o idoso não confirmar a medicação, o familiar recebe um alerta.</li>
+            </ul>
+
+            <h3>Vídeo de Apresentação (Pitch)</h3>
+            <div class="video-container">
+                <iframe
+                        id="video-medibox"
+                        width="560"
+                        height="315"
+                        src=""
+                        data-src="Video_MediBox.mp4"
+                        title="YouTube video player"
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                </iframe>
+            </div>
+
             <h3>Modelo de Negócio</h3>
-            <p>Parcerias B2B com farmácias e clínicas para distribuição do serviço.</p>
+            <p>Foco B₂B₂C: Parcerias com redes de farmácias e clínicas que oferecem o aplicativo como um serviço de valor agregado aos seus clientes.</p>
+
+            <div class="modal-actions" style="justify-content: center;">
+                <a href="Apresentaçao_MediBox.pdf" target="_blank" class="btn-modal secondary">
+                    <i class="fas fa-file-pdf"></i> Ler Pitch Deck Completo (PDF)
+                </a>
+            </div>
         </div>
     </div>
 </div>
@@ -273,15 +329,32 @@
     <div class="modal-content">
         <span class="close-btn" onclick="closeModal('modal-tenis')">&times;</span>
         <h2>👟 Health Strike & Spy Shoes</h2>
-        <p class="modal-subtitle">Inovação em IoT e Wearables</p>
+        <p class="modal-subtitle">Inovação em Wearable Technology e IoT</p>
+
         <div class="modal-body">
-            <h3>O Produto</h3>
-            <p>Desenvolvimento conceitual de um tênis inteligente ("Health Strike") com sensores de pressão e movimento integrados na sola.</p>
-            <h3>Tecnologia</h3>
+            <div class="modal-image-container">
+                <img src="health_strike.png" alt="Protótipo do Tênis Inteligente e App" class="modal-diagram">
+                <p class="image-caption">Figura 1: Integração entre Hardware (Sensores) e Software (App Mobile)</p>
+            </div>
+
+            <h3>O Conceito</h3>
+            <p>
+                O <strong>Health Strike</strong> não é apenas um calçado, mas uma solução completa de IoT. Identificamos que 47% dos praticantes de atividades físicas têm dificuldade em monitorar seu progresso com precisão. Nossa solução une hardware vestível com inteligência de dados.
+            </p>
+
+            <h3>Tecnologias Integradas</h3>
             <ul>
-                <li><strong>Hardware:</strong> Sensores de precisão, Bluetooth Low Energy e amortecimento adaptativo.</li>
-                <li><strong>Software (App):</strong> Aplicativo "Spy Shoes" com IA que cria planos de nutrição e treino baseados nos dados coletados pelo tênis.</li>
+                <li><strong>Hardware Inteligente:</strong> Sensores de pressão e precisão embutidos na sola para contagem de passos, calorias e análise de pisada.</li>
+                <li><strong>Conectividade:</strong> Transmissão de dados via Bluetooth Low Energy para o smartphone em tempo real.</li>
+                <li><strong>Software (Spy Shoes):</strong> Aplicativo que utiliza Inteligência Artificial para analisar os dados coletados e gerar planos de treino e nutrição personalizados.</li>
+                <li><strong>Diferencial:</strong> Amortecimento inteligente que se adapta ao terreno e gamificação com "Corridas Virtuais".</li>
             </ul>
+
+            <div class="modal-actions" style="justify-content: center;">
+                <a href="Projeto A3 Tenis inteligente.pdf" target="_blank" class="btn-modal secondary">
+                    <i class="fas fa-file-pdf"></i> Ver Documentação Completa (PDF)
+                </a>
+            </div>
         </div>
     </div>
 </div>

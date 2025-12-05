@@ -5,8 +5,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     filterButtons.forEach(button => {
         button.addEventListener('click', () => {
+            // Remove a classe ativa de todos e adiciona no clicado
             filterButtons.forEach(btn => btn.classList.remove('active'));
             button.classList.add('active');
+
             const filterValue = button.getAttribute('data-filter');
 
             projectCards.forEach(card => {
@@ -20,27 +22,24 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// Lógica dos Modais
+
+
+// Fecha o Modal (Botão X)
+// Abre o Modal (com Lazy Load de vídeo)
 function openModal(modalId) {
     const modal = document.getElementById(modalId);
     if (modal) {
         modal.style.display = "block";
-        document.body.style.overflow = "hidden"; // Impede rolagem da página de fundo
-    }
-}
+        document.body.style.overflow = "hidden"; // Trava a rolagem
 
-function closeModal(modalId) {
-    const modal = document.getElementById(modalId);
-    if (modal) {
-        modal.style.display = "none";
-        document.body.style.overflow = "auto"; // Libera rolagem
-    }
-}
-
-// Fechar modal ao clicar fora dele
-window.onclick = function(event) {
-    if (event.target.classList.contains('modal')) {
-        event.target.style.display = "none";
-        document.body.style.overflow = "auto";
+        // CÓDIGO NOVO: Carrega o vídeo apenas ao abrir
+        const iframe = modal.querySelector('iframe');
+        if (iframe) {
+            const dataSrc = iframe.getAttribute('data-src');
+            // Só carrega se o src ainda estiver vazio e tivermos um data-src salvo
+            if (dataSrc && !iframe.src) {
+                iframe.src = dataSrc;
+            }
+        }
     }
 }
