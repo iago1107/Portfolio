@@ -1,11 +1,78 @@
 :root {
-    --bg-color: #0a0a0a;
-    --card-bg: #171717;
-    --text-color: #e5e5e5;
-    --accent-color: #6366f1; /* Um roxo/azul moderno */
-    --accent-hover: #4f46e5;
+
+
     --gray: #a3a3a3;
+
+    /* Fundo 'Blackout' */
+    --bg-color: #050505;
+
+    /* Cartões parecendo inventário de RPG */
+    --card-bg: #101014;
+
+    /* A Cor Principal: Roxo Neon (Cyberpunk) */
+    --accent-color: #d946ef;
+
+    /* Cor Secundária (para hovers): Ciano RGB */
+    --accent-hover: #06b6d4;
+
+    /* Texto */
+    --text-color: #ffffff;
+    --text-secondary: #9ca3af;
+
+    /* Bordas mais quadradas (Tech) */
+    --border-radius: 4px;
+
+    /* O Segredo: Sombra Neon (Glow) */
+    --card-shadow: 0 0 0 1px #333, 0 0 15px rgba(217, 70, 239, 0.15);
 }
+
+/* --- AJUSTES ESPECIAIS PARA FICAR COM CARA DE JOGO --- */
+
+/* 1. Fonte dos Títulos */
+h1, h2, h3, .logo, .btn, .tag {
+    font-family: 'Rajdhani', sans-serif;
+    text-transform: uppercase; /* Tudo maiúsculo estilo HUD */
+    letter-spacing: 1px;
+}
+
+/* 2. Efeito nos Cards (Borda brilha ao passar o mouse) */
+.project-card, .cert-card {
+    transition: all 0.3s ease;
+    border: 1px solid #333; /* Borda padrão escura */
+}
+
+.project-card:hover, .cert-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    /* Borda muda para Ciano e brilha forte */
+    border-color: var(--accent-hover);
+    box-shadow: 0 0 20px var(--accent-hover);
+}
+
+/* 3. Botões "Press Start" */
+.btn, .btn-modal {
+    background: linear-gradient(45deg, var(--accent-color), #8b5cf6); /* Gradiente Roxo */
+    border: none;
+    box-shadow: 0 4px 15px rgba(217, 70, 239, 0.4); /* Brilho embaixo */
+    font-weight: 700;
+}
+
+.btn:hover, .btn-modal:hover {
+    background: linear-gradient(45deg, var(--accent-hover), #3b82f6); /* Muda para Azul/Ciano */
+    box-shadow: 0 0 25px var(--accent-hover); /* Super brilho */
+}
+
+/* 4. Scrollbar Personalizada (Barra de rolagem neon) */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: var(--bg-color);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--accent-color);
+    border-radius: 5px;
+    }
+
 
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
 
